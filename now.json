@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "env": {
+    "docId": "1G3onD2vDtRMApo0yt8qJXb-PGx-BFgFrx3o9EIA_f3M",
+    "sendGridKey": "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",
+    "PORT": "3000"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ]
+}
